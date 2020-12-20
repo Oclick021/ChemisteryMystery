@@ -80,7 +80,7 @@ namespace ChemisteryMystery
                     var e = x1 * hMinCh4 + X2 * hMinO2 + X2 * 3.76 * hMinN2;
                     var f = x3 * hMinCO2 + x4 * hMinH2o + X5 * hMinN2 + X6 * hMinO2;
                     var g = R * tin * (x1 + X2);
-                    var h = (x3 + x4 + X5 + X6);
+                    var h = (x3 + x4 + X5 + X6)*R;
                     var cvTad = (e + f + g) / h;
                     Console.WriteLine($"e = {e}");
                     Console.WriteLine($"f = {f}");
